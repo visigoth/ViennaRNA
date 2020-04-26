@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import RNA
 
 # The RNA sequence
@@ -7,4 +8,4 @@ seq = "GAGUAGUGGAACCAGGCUAUGUUUGUGACUCGCAGACUAACA"
 (ss, mfe) = RNA.fold(seq)
 
 # print output
-print "%s\n%s [ %6.2f ]" % (seq, ss, mfe)
+print("{}\n{} [ {:6.2f} ]".format(seq, ss, mfe))

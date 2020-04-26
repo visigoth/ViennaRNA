@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import RNA
 
 sequence = "GGGGAAAACCCC"
@@ -10,9 +11,9 @@ subopt_data = { 'counter' : 1, 'sequence' : sequence }
 # Print a subopt result as FASTA record
 def print_subopt_result(structure, energy, data):
     if not structure == None:
-        print ">subopt %d" % data['counter']
-        print "%s" % data['sequence']
-        print "%s [%6.2f]" % (structure, energy)
+        print(">subopt {}".format(data['counter']))
+        print("{}".format(data['sequence']))
+        print("{} [{:6.2f}]".format(structure, energy))
         # increase structure counter
         data['counter'] = data['counter'] + 1
 
